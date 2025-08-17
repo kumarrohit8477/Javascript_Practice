@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .box{
+         margin: 12px;
+         padding: 12px;
+         background-color: rgb(207, 214, 228);
+      }
+      
+      .container{
+         margin: 12px;
+         padding: 12px;
+         background-color: rgb(29, 35, 47);
+      }
+
+
+      .carton{
+         margin: 12px;
+         padding: 12px;
+         background-color: rgb(97, 114, 148);
+      }
+
+
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="carton">
+         <div class="box">
+            hey! I an a box
+         </div>
+      </div>
+   </div>
+
+   <script>
+      document.querySelector('.container').addEventListener('click',()=>{
+         alert('Container clicked!');
+      })
+
+      document.querySelector('.carton').addEventListener('click',()=>{
+         alert('carton clicked!');
+      })
+
+      document.querySelector('.box').addEventListener('click',(a)=>{
+         a.stopPropagation(); // Prevents the event from bubbling up to parent elements
+         alert('box clicked!');
+      })
+
+
+   </script>
+</body>
+</html>
