@@ -1,119 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <style>
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-         color: white;
-         font-family: Arial, sans-serif;
-      }
-
-      body {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100vh;
-         background-color: rgb(31, 36, 45)
-      }
-      .container {
-         height: 140px;
-         width: 1000px;
-         display: flex;
-         align-items: center;
-      }
-      .videonum{
-         height: 150px;
-         width: 30px;
-         align-content: center;
-         text-align: center;         
-         
-      }
-      .box1{
-         height: 140px;
-         width: 240px;
-         
-         border: 1px solid grey;
-         border-radius: 10px;
-         img {
-            height: 100%;
-            max-width: 100%;
-            border-radius: 10px;
-            position: relative;;
-         }
-         
-      }
-      
-      .duration{
-
-         height: 25px;
-         width: 50px;
-         align-content: center;
-         text-align: center;
-         border-radius: 5px;
-         margin-top: 100px;
-         margin-left: 145px;
-         position: relative;
-         
-
-      }
-      
-      .box2{
-         height: 140px;
-         
-         padding: 10px;
-      }
-
-      .title{
-         font-size: larger;
-         font-weight: bold;
-      }
-      .cname{
-         display: inline-block;
-         
-      }
-      .views{
-         display: inline-block;
-         margin-left: 10px;
-      }
-      .monthsOld{
-         display: inline-block;
-         margin-left: 10px;
-      }
-      .cname, .views, .monthsOld{
-         margin-top: 10px;
-         font-size: 14px;
-         color: rgb(154, 150, 150);
-      }
-
-   </style>
+   <link rel="stylesheet" href="domExercise.css">
 </head>
 
 
-
 <body>
-   <div class="container">
-      <div class="videonum">1</div>
-      <div class="box1"> 
-         <img src="https://i.ytimg.com/vi/kJEsTjH5mVg/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCJ1LoyqdZFLpT7I8d4ATCDAg7rrw" alt="image">  
-      </div>
-      <div class="box2">
-         <div class="title">Our First HTML Website | Sigma Web Development - Tutorial 2</div>
-         <div class="cname">CodeWithHarry</div>
-         <div class="views">1.2M views</div>
-         <div class="monthsOld">1 month ago</div>
-      </div>
-   </div>
 
-   <script>
-      function createCard(title, cname, vies, monthsOld, imgSrc, duration){
-         
-      }
-
-   </script>
+   <body>
+      <div class="container">
+         <div class="card">
+            <div class="image">
+               <img
+                  src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+                  alt="">
+               <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+               <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+               <p>CodeWithHarry . 727K views . 2 months ago</p>
+            </div>
+         </div>
+      </div>
+      <script src="domExcercise.js"></script>
+   </body>
 </body>
+
 </html>
